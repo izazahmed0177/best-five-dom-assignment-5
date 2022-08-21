@@ -6,14 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Five Tigers</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>Select The Best Five <span>The Tigers</span></h1>
+    <header class="bg-neutral-900 mt-0 ">
+        <div class="text-center w-10/12 mx-auto mt-0 pb-20 ">
+            <h1 class="text-6xl italic hover:not-italic text-orange-600 p-6">Select The Best Five <span>
+                    Tigers</span>
+            </h1>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat debitis quam, sed expedita
+            <p class="text-1xl text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat
+                debitis
+                quam, <br> sed expedita
                 earum velit aliquid, sequi tenetur reiciendis, possimus nihil ullam quae mollitia deleniti voluptate in.
                 Commodi, quidem.</p>
 
@@ -21,6 +32,78 @@
 
     </header>
     <main>
+        <section class="w-9/12 mx-auto mt-5 pb-20">
+
+            <div class="grid grid-cols-2 gap-4 divide-x">
+                <!-- 1st -->
+                <div class="grid grid-cols-3 gap-4">
+                    <!--  -->
+                    <!-- product 1 -->
+                    <div>
+                        <div class="card card-compact w-full bg-base-100 shadow-xl">
+                            <figure><img src="images/litton-das.webp" alt="Shoes" class="w-full h-40" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Litton Das</h2>
+                                <p>
+                                    Price: $ <span>108</span>
+                                </p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- 2nd -->
+                <div>
+                    <div class="mt-5 bg-neutral-900 text-white p-8">
+                        <h1>Selected - V</h1>
+                        <ol type="1" class="list-decimal">
+                            <li>sakib</li>
+                            <li>sakib</li>
+                            <li>sakib</li>
+                            <li>sakib</li>
+                            <li>sakib</li>
+                        </ol>
+                    </div>
+
+
+                    <!--  -->
+
+                    <div class="mt-5 bg-neutral-900 text-white p-6">
+                        <h1>Budget</h1>
+                        <div>
+                            <label for="">Per Player</label>
+                            <input type="text">
+                        </div>
+                        <button>Calculate</button>
+                        <h2>Player Expenses $<span>2000</span></h2>
+                        <div>
+                            <label for="">Manager</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="">Coach</label>
+                            <input type="text">
+                        </div>
+                        <button>Calculate Total</button>
+                        <div class="grid grid-cols-2 gap-4 divide-x">
+                            <h2>Total</h2>
+                            <p>$<span>4888</span></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
 
 
     </main>
