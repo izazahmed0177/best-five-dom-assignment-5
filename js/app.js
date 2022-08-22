@@ -82,16 +82,18 @@ function addToPlayer(element) {
 
     if (totalPlayersList<=5) {
         displayPlayer();
+        element.disabled = true;
+       
+        element.setAttribute("style", "background-color: #cccccc;");
+    
     } else {
         alert("only 5")
         
     }
 
-    // displayPlayer();
+   
 
 }
 
-// const tables=document.querySelectorAll('table');
 
-// tables.style.padding='7px'
 
