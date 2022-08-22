@@ -1,8 +1,8 @@
 // 
 document.getElementById('btn-calculate').addEventListener('click',function(){
-    console.log('click')
+    // console.log('click')
     const playerCost=getInputFieldValueById('player-cost');
-    console.log(playerCost)
+    // console.log(playerCost)
     const playerExpenses=playerCost*5;
 
     //
@@ -19,6 +19,11 @@ document.getElementById('btn-calculate-total').addEventListener('click',function
 const mangerCost=getInputFieldValueById('manger-cost');
 const coachCost=getInputFieldValueById('coach-cost');
 
-console.log(mangerCost,coachCost)
+const playerExpenses=getTextElementValueById('player-expenses')
 
+console.log(mangerCost,coachCost,playerExpenses)
+
+const calculateTotalAmount = playerExpenses + mangerCost + coachCost;
+
+setTextElementValueById('calculate-total-amount',calculateTotalAmount);
 })
