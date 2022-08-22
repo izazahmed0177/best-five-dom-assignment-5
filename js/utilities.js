@@ -29,7 +29,7 @@ function getTextElementValueById(elementId) {
 
 
 //------------------
-// set value in text field
+// set value in text field & input field
 function setTextElementValueById(elementId,newValue) {
     const textElement=document.getElementById(elementId);
     textElement.innerText=newValue;
