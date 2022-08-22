@@ -220,35 +220,39 @@
                         <h1 class="text-center text-2xl font-bold pb-5">Budget</h1>
                         <div class="pt-4 pb-4 grid grid-cols-2 gap-4 pt-4 justify-between">
                             <label for="">Per Player</label>
-                            <input class="p-2 w-full border-solid border-2 border-white bg-neutral-900" type="text">
+                            <input id="player-cost" class="p-2 w-full border-solid border-2 border-white bg-neutral-900"
+                                type="text">
                         </div>
                         <div>
-                            <button
+                            <button id="btn-calculate"
                                 class="bg-sky-600 hover:bg-sky-700 font-semibold text-white  py-3 w-full ">Calculate</button>
                         </div>
 
 
                         <div class="grid grid-cols-2 gap-4 pt-4 justify-between">
                             <p class="">Player Expenses </p>
-                            <p>$<span>2000</span></p>
+                            <p>$<span id="player-expenses">2000</span></p>
                         </div>
 
                         <div class="pt-4 grid grid-cols-2 gap-4 pt-4 justify-between">
                             <label for="">Manager</label>
-                            <input class="p-2 w-full bg-neutral-900 border-solid border-2 border-white" type="text">
+                            <input id="manger-cost" class="p-2 w-full bg-neutral-900 border-solid border-2 border-white"
+                                type="text">
                         </div>
                         <div class="pt-4 pb-4 grid grid-cols-2 gap-4 pt-4 justify-between">
                             <label for="">Coach</label>
-                            <input class="p-2 w-full border-solid border-2 border-white bg-neutral-900" type="text">
+                            <input id="coach-cost" class="p-2 w-full border-solid border-2 border-white bg-neutral-900"
+                                type="text">
                         </div>
-                        <button class="bg-sky-600 hover:bg-sky-700 font-semibold text-white  py-3 w-full">Calculate
+                        <button id="btn-calculate-total"
+                            class="bg-sky-600 hover:bg-sky-700 font-semibold text-white  py-3 w-full">Calculate
                             Total</button>
                         <div class="grid grid-cols-2 gap-4 pt-4 justify-between">
                             <div>
                                 <h2>Total</h2>
                             </div>
                             <div class="total-amount grid justify-end text-orange-600">
-                                <p>$<span>48888</span></p>
+                                <p>$<span id="calculate-total-amount">48888</span></p>
                             </div>
 
 
@@ -268,7 +272,7 @@
 
     </main>
 
-
+    <script src="js/utilities.js"></script>
     <script src="js/app.js"></script>
 </body>
 
