@@ -12,7 +12,19 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
 
     //
 
-    setTextElementValueById('player-expenses',playerExpenses);
+    if (playerExpenses<0 ) {
+        alert('give me positive number')
+    } else if (typeof(playerExpenses) !='number') {
+        alert('give me  number')
+    }
+     else if (isNaN(playerExpenses)) {
+        alert('give me not a nan number')
+    }else{
+
+        setTextElementValueById('player-expenses',playerExpenses);
+    }
+
+   
 
 })
 //
@@ -26,14 +38,29 @@ const coachCost=getInputFieldValueById('coach-cost');
 
 const playerExpenses=getTextElementValueById('player-expenses')
 
-console.log(mangerCost,coachCost,playerExpenses)
+if (((mangerCost) < 0) ||((coachCost)<0) ||((playerExpenses)<0) ) {
+    alert('give me positive number')
+} else if ((typeof(mangerCost) != 'number' ) || (typeof(coachCost) !="number") ||(typeof(playerExpenses) !='number')) {
+    alert('give me  number')
+}
+ else if (isNaN(mangerCost) || isNaN(coachCost) || isNaN(playerExpenses)) {
+    alert('give me not a nan number')
+}
+else{
 
-const calculateTotalAmount = playerExpenses + mangerCost + coachCost;
+    const calculateTotalAmount = playerExpenses + mangerCost + coachCost;
 
-setTextElementValueById('calculate-total-amount',calculateTotalAmount);
+    setTextElementValueById('calculate-total-amount',calculateTotalAmount);
+}
+
+// console.log(mangerCost,coachCost,playerExpenses)
+
+// const calculateTotalAmount = playerExpenses + mangerCost + coachCost;
+
+// setTextElementValueById('calculate-total-amount',calculateTotalAmount);
 })
 
-
+//-------------------------------
 
 //------------------------------------------------------
 function displayPlayer() {
