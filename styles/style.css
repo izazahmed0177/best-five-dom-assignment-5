@@ -1,3 +1,6 @@
 .selected-player li{
     padding: 5px;
 }
+.player-list th{
+    padding-right: 30px;
+}

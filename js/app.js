@@ -2,10 +2,13 @@
 const players = [];
 //
 document.getElementById('btn-calculate').addEventListener('click',function(){
+
+    let totalPlayersList=players.length;
+    console.log(totalPlayersList);
     // console.log('click')
     const playerCost=getInputFieldValueById('player-cost');
     // console.log(playerCost)
-    const playerExpenses=playerCost*5;
+    const playerExpenses=playerCost*totalPlayersList;
 
     //
 
@@ -45,8 +48,8 @@ function displayPlayer() {
             const tr = document.createElement("tr");
     
             tr.innerHTML = ` 
-            <th>${i+1}</th>
-            <td>${players[i].playerName}</td>
+            <th>${i+1}. </th>
+            <td> ${players[i].playerName}</td>
              `;
             playerList1.appendChild(tr);    
         }
@@ -77,8 +80,18 @@ function addToPlayer(element) {
     let totalPlayersList=players.length;
     console.log(totalPlayersList);
 
-    displayPlayer();
+    if (totalPlayersList<=5) {
+        displayPlayer();
+    } else {
+        alert("only 5")
+        
+    }
+
+    // displayPlayer();
 
 }
 
+// const tables=document.querySelectorAll('table');
+
+// tables.style.padding='7px'
 
