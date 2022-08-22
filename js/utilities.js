@@ -12,3 +12,15 @@ function getInputFieldValueById(inputId) {
 }
 
 //--------------
+
+
+//------------------
+// set value in text field
+function setTextElementValueById(elementId,newValue) {
+    const textElement=document.getElementById(elementId);
+    textElement.innerText=newValue;
+    
+}
+
+
+//-----------------

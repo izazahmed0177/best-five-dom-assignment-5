@@ -3,6 +3,12 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
     console.log('click')
     const playerCost=getInputFieldValueById('player-cost');
     console.log(playerCost)
+    const playerExpenses=playerCost*5;
+
+    //
+
+    setTextElementValueById('player-expenses',playerExpenses);
+
 })
 //
 
