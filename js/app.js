@@ -45,6 +45,9 @@ if (((mangerCost) < 0) ||((coachCost)<0) ||((playerExpenses)<0) ) {
 }
  else if (isNaN(mangerCost) || isNaN(coachCost) || isNaN(playerExpenses)) {
     alert('give me not a nan number')
+
+    
+   
 }
 else{
 
