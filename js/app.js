@@ -3,26 +3,36 @@ const players = [];
 //
 document.getElementById('btn-calculate').addEventListener('click',function(){
 
+    const playerCost=getInputFieldValueById('player-cost');
     let totalPlayersList=players.length;
     console.log(totalPlayersList);
+
+    if (players.length <=5) {
+        const playerExpenses=playerCost*totalPlayersList;
+
+
+        if (playerExpenses<0 ) {
+            alert('give me positive number')
+        } else if (typeof(playerExpenses) !='number') {
+            alert('give me  number')
+        }
+         else if (isNaN(playerExpenses)) {
+            alert('give me not a nan number')
+        }else{
+    
+            setTextElementValueById('player-expenses',playerExpenses);
+        }
+    } else {
+        
+    }
     // console.log('click')
-    const playerCost=getInputFieldValueById('player-cost');
+   
     // console.log(playerCost)
-    const playerExpenses=playerCost*totalPlayersList;
+    
 
     //
 
-    if (playerExpenses<0 ) {
-        alert('give me positive number')
-    } else if (typeof(playerExpenses) !='number') {
-        alert('give me  number')
-    }
-     else if (isNaN(playerExpenses)) {
-        alert('give me not a nan number')
-    }else{
-
-        setTextElementValueById('player-expenses',playerExpenses);
-    }
+  
 
    
 
