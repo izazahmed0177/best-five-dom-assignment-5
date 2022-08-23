@@ -5,25 +5,51 @@ const players = [];
 document.getElementById('btn-calculate').addEventListener('click',function(){
 
     const playerCost=getInputFieldValueById('player-cost');
-    let totalPlayersList=players.length;
-    console.log(totalPlayersList);
+    let totalPlayersList1=players.length;
+    
 
     if (players.length <=5) {
-        const playerExpenses=playerCost*totalPlayersList;
-
+        // let totalPlayersList=players.length;
+    
+        const playerExpenses=playerCost*totalPlayersList1;
+      
 
         if (playerExpenses<0 ) {
-            alert('give me positive number')
+            alert('Please Give me a Valid Positive Input !!')
         } else if (typeof(playerExpenses) !='number') {
-            alert('give me  number')
+            alert('Please Give me a Valid Input !!')
         }
          else if (isNaN(playerExpenses)) {
-            alert('give me not a nan number')
+            alert('Please Give me a Valid Input !!')
         }else{
+
+            
     
             setTextElementValueById('player-expenses',playerExpenses);
         }
+
+
     } else {
+
+
+        const playerExpenses=playerCost*5;
+        
+
+        if (playerExpenses<0 ) {
+            alert('Please Give me a Valid Positive Input !!')
+        } else if (typeof(playerExpenses) !='number') {
+            alert('Please Give me a Valid Input !!')
+        }
+         else if (isNaN(playerExpenses)) {
+            alert('Please Give me a Valid Input !!')
+        }else{
+
+            
+    
+            setTextElementValueById('player-expenses',playerExpenses);
+        }
+
+
         
     }
     // console.log('click')
@@ -40,12 +66,12 @@ const coachCost=getInputFieldValueById('coach-cost');
 const playerExpenses=getTextElementValueById('player-expenses')
 
 if (((mangerCost) < 0) ||((coachCost)<0) ||((playerExpenses)<0) ) {
-    alert('give me positive number')
+    alert('Please Give me a Valid Positive Input !!')
 } else if ((typeof(mangerCost) != 'number' ) || (typeof(coachCost) !="number") ||(typeof(playerExpenses) !='number')) {
-    alert('give me  number')
+    alert('Please Give me a Valid Input !!')
 }
  else if (isNaN(mangerCost) || isNaN(coachCost) || isNaN(playerExpenses)) {
-    alert('give me not a nan number')  
+    alert('Please Give me a Valid Input !!')  
 }
 else{
 
@@ -90,14 +116,16 @@ function addToPlayer(element) {
     // console.log(players);
     // console.log(playerObj);
     let totalPlayersList=players.length;
-    console.log(totalPlayersList);
+
+    // console.log(totalPlayersList);
+
     if (totalPlayersList<=5) {
         displayPlayer();
         element.disabled = true; 
         element.setAttribute("style", "background-color: #cccccc;");
     
     } else {
-        alert("only 5")
+        alert("You Can Select Only Five Players !!")
         
     }
 }
