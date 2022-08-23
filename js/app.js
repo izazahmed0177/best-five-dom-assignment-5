@@ -1,6 +1,7 @@
 // 
+// player add array
 const players = [];
-//
+//calculate player value 
 document.getElementById('btn-calculate').addEventListener('click',function(){
 
     const playerCost=getInputFieldValueById('player-cost');
@@ -28,19 +29,9 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
     // console.log('click')
    
     // console.log(playerCost)
-    
-
-    //
-
-  
-
-   
-
 })
-//
-
 //-------
-
+// calculate total player & manager & coach
 document.getElementById('btn-calculate-total').addEventListener('click',function(){
 
 const mangerCost=getInputFieldValueById('manger-cost');
@@ -54,10 +45,7 @@ if (((mangerCost) < 0) ||((coachCost)<0) ||((playerExpenses)<0) ) {
     alert('give me  number')
 }
  else if (isNaN(mangerCost) || isNaN(coachCost) || isNaN(playerExpenses)) {
-    alert('give me not a nan number')
-
-    
-   
+    alert('give me not a nan number')  
 }
 else{
 
@@ -65,17 +53,13 @@ else{
 
     setTextElementValueById('calculate-total-amount',calculateTotalAmount);
 }
-
 // console.log(mangerCost,coachCost,playerExpenses)
-
 // const calculateTotalAmount = playerExpenses + mangerCost + coachCost;
-
 // setTextElementValueById('calculate-total-amount',calculateTotalAmount);
 })
-
 //-------------------------------
-
 //------------------------------------------------------
+// display select player
 function displayPlayer() {
 
     const playerList1=document.getElementById('player-list');
@@ -92,47 +76,30 @@ function displayPlayer() {
             <td> ${players[i].playerName}</td>
              `;
             playerList1.appendChild(tr);    
-        }
-      
-    
+        }   
 }
-
-
-
-
 //----------------------------------
-
+// add player button and chach player
 function addToPlayer(element) {
     const playerName = element.parentNode.parentNode.children[0].innerText;
-
     // console.log(playerName)
-
        const playerObj={
             playerName:playerName,
          };
     players.push(playerObj);
-
-  
     // console.log(players);
-    console.log(playerObj);
-
-    
+    // console.log(playerObj);
     let totalPlayersList=players.length;
     console.log(totalPlayersList);
-
     if (totalPlayersList<=5) {
         displayPlayer();
-        element.disabled = true;
-       
+        element.disabled = true; 
         element.setAttribute("style", "background-color: #cccccc;");
     
     } else {
         alert("only 5")
         
     }
-
-   
-
 }
 
 

@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Five Tigers</title>
-
+    <!--style sheet link  -->
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- tailwindcss link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google font link -->
@@ -21,6 +22,7 @@
 </head>
 
 <body class="bg-[url('/images/tigers.jpg')] bg-cover bg-center mt-0">
+    <!-- header section -->
     <header class="bg-[url('/images/cricket-team.jpg')] bg-cover bg-center mt-0 ">
         <div class=" text-center w-10/12 mx-auto mt-0 pb-20 ">
             <h1
@@ -39,6 +41,7 @@
         </div>
 
     </header>
+    <!-- main section -->
     <main class=" mt-0">
         <section class="w-10/12 mx-auto mt-5 pb-20">
 
@@ -46,7 +49,7 @@
                 <!-- 1st -->
                 <div class="col-span-2  grid grid-cols-3 gap-4">
                     <!--  -->
-
+                    <!-- player card 1 -->
                     <div>
                         <div class="shadow-xl text-center text-white">
                             <div class="imageplaye bg-[url('/images/giphy.gif')] bg-cover bg-center p-4 ">
@@ -65,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- player card 2 -->
                     <div>
                         <div class="shadow-xl text-center text-white">
                             <div class="imageplaye bg-[url('/images/giphy.gif')] bg-cover bg-center p-4 ">
@@ -86,7 +89,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- player card 3 -->
                     <div>
                         <div class="shadow-xl text-center text-white">
                             <div class="imageplaye bg-[url('/images/giphy.gif')] bg-cover bg-center p-4 ">
@@ -106,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- player card 4 -->
                     <div>
                         <div class="shadow-xl text-center text-white">
                             <div class="imageplaye bg-[url('/images/giphy.gif')] bg-cover bg-center p-4 ">
@@ -126,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- player card 5 -->
                     <div>
                         <div class="shadow-xl text-center text-white">
                             <div class="imageplaye bg-[url('/images/giphy.gif')] bg-cover bg-center p-4 ">
@@ -146,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- player card 6 -->
                     <div>
                         <div class="shadow-xl text-center text-white">
                             <div class="imageplaye bg-[url('/images/giphy.gif')] bg-cover bg-center p-4 ">
@@ -167,7 +170,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- player card 7 -->
                     <div>
                         <div class="shadow-xl text-center text-white">
                             <div class="imageplaye bg-[url('/images/giphy.gif')] bg-cover bg-center p-4 ">
@@ -188,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- player card 8 -->
                     <div>
                         <div class="shadow-xl text-center  text-white">
                             <div class="imageplaye bg-[url('/images/giphy.gif')] bg-cover bg-center p-4 ">
@@ -209,8 +212,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--  -->
-
+                    <!-- player card 9 -->
                     <div>
                         <div class="shadow-xl text-center  text-white">
                             <div class="imageplaye bg-[url('/images/giphy.gif')] bg-cover bg-center p-4 ">
@@ -231,50 +233,26 @@
                         </div>
                     </div>
                     <!--  -->
-
-
-
-
-
-
-
-
-
                 </div>
                 <!-- 2nd -->
                 <div>
+                    <!-- selected 5 section -->
                     <div class=" bg-neutral-900 text-white p-8">
                         <h1
                             class="text-center text-2xl font-bold pb-5 underline decoration-wavy decoration-2 underline-offset-8 decoration-orange-600">
                             Selected
                             - V</h1>
-
-                        <!-- <ol id="player-list" type="1" class="list-decimal selected-player">
-                            <li>sakib</li>
-                            <li>sakib</li>
-                            <li>sakib</li>
-                            <li>sakib</li>
-                            <li>sakib</li>
-
-                        </ol> -->
-
                         <table>
                             <tbody id="player-list">
+                                <!-- dynamic value add -->
                                 <!-- <tr>
                                 <th>1</th>
-                                <td>Cy Ganderton</td>
-                                
+                                <td>sakib</td> 
                               </tr> -->
                             </tbody>
                         </table>
-
-
-
                     </div>
-
-
-                    <!--  -->
-
+                    <!--Budget section  -->
                     <div class="mt-5 bg-neutral-900 text-white p-6">
                         <h1
                             class="text-center text-2xl font-bold pb-5 underline decoration-wavy decoration-2 underline-offset-8 decoration-orange-600">
@@ -288,8 +266,6 @@
                             <button id="btn-calculate"
                                 class="bg-sky-600 hover:bg-sky-700 font-semibold text-white  py-3 w-full ">Calculate</button>
                         </div>
-
-
                         <div class="grid grid-cols-2 gap-4 pt-4 justify-between">
                             <p class="">Player Expenses </p>
                             <p>$<span id="player-expenses">0</span></p>
@@ -315,31 +291,17 @@
                             <div class="total-amount grid justify-end text-orange-600">
                                 <p>$<span id="calculate-total-amount">0</span></p>
                             </div>
-
-
-
                         </div>
-
                     </div>
-
                 </div>
-
-
             </div>
-
-
         </section>
-
-
     </main>
     <footer>
         <div class="text-center bg-neutral-900 p-10">
             <h1 class="text-1xl text-white">Copyright @ 2022 All Rights Reserved.</h1>
         </div>
-
     </footer>
-
-
 
     <script src="js/utilities.js"></script>
 
